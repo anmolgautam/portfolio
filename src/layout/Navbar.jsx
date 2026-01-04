@@ -7,7 +7,6 @@ const navLinks = [
   { href: "#experience", label: "Experience" },
   { href: "#research", label: "Research" },
   { href: "#projects", label: "Projects" },
-  
 ];
 
 export const Navbar = () => {
@@ -54,8 +53,16 @@ export const Navbar = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden md:block">
-          <Button size="sm" href="#contact" className="focus-visible:ring-offset-2 focus-visible:ring-offset-background">Contact Me</Button>
+        <div className="hidden md:block overflow-visible shrink-0">
+          <div className="overflow-visible shrink-0">
+            <Button
+              size="sm"
+              href="#contact"
+              className="inline-flex whitespace-nowrap shrink-0"
+            >
+              Contact Me
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -82,7 +89,11 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
+            <Button
+              onClick={() => setIsMobileMenuOpen(false)}
+              size="sm"
+              href="#contact"
+            >
               Contact Me
             </Button>
           </div>

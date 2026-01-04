@@ -5,6 +5,7 @@ import {
   Github,
   Linkedin,
   Twitter,
+  X,
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
@@ -150,12 +151,20 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button size="lg" href="#contact">
                 Discuss a project <ArrowRight className="w-5 h-5" />
               </Button>
               <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
+                <a
+                  href="/Anmol_Gautam_resume.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </a>
               </AnimatedBorderButton>
             </div>
 
@@ -251,7 +260,7 @@ export const Hero = () => {
                         href: "https://github.com/anmolgautam",
                       },
                       {
-                        icon: Twitter,
+                        icon: X,
                         href: "https://x.com/anmolgautam28",
                       },
                     ].map((social, idx) => (
