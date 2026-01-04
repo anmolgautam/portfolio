@@ -70,7 +70,6 @@ const experiences = [
   },
 ];
 
-
 export const Experience = () => {
   return (
     <section id="experience" className="py-32 relative overflow-hidden">
@@ -83,7 +82,7 @@ export const Experience = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <span
-            className="text-secondary-foreground text-sm
+            className="text-primary-foreground text-sm
            font-medium tracking-wider uppercase animate-fade-in"
           >
             Career Journey
@@ -91,7 +90,7 @@ export const Experience = () => {
           <h2
             className="text-4xl md:text-5xl font-bold
            mt-4 mb-6 animate-fade-in animation-delay-100
-            text-secondary-foreground"
+            text-primary-foreground"
           >
             Experience that{" "}
             <span className="font-serif italic font-normal text-white">
@@ -104,8 +103,8 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            A timeline of my professional growth, from curious beginner to Lead
+            Applied Scientist leading teams and building products at scale.
           </p>
         </div>
 
