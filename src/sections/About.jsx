@@ -52,7 +52,7 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I’m a Lead Applied Scientist focused on building
+                I am a Lead Applied Scientist focused on building
                 production-grade AI and LLM systems.
               </p>
               <p>
@@ -83,8 +83,8 @@ export const About = () => {
             <div className="relative glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <div className="absolute -inset-1 rounded-2xl bg-primary/20 blur-lg opacity-60 pointer-events-none" />
               <p className="relative z-10 text-lg font-medium italic text-foreground">
-                “I care deeply about systems that actually ship — balancing
-                performance, reliability, and cost — and about building AI
+                “I care deeply about systems that actually ship balancing
+                performance, reliability, and cost and about building AI
                 products that move beyond demos into real impact.”
               </p>
             </div>

@@ -3,7 +3,7 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "SuperCoder 2.0 — Autonomous Multi-Agent Programming System",
+    title: "SuperCoder 2.0 : Autonomous Multi-Agent Programming System",
     description:
       "An autonomous multi-agent coding system that reasons, plans, navigates repositories, and executes code changes. SuperCoder 2.0 achieved 33% on SWE-Bench-Lite, outperforming several open coding agents and approaching proprietary systems.",
     image: "/projects/Supercoder.png",
@@ -28,7 +28,7 @@ const projects = [
     tags: ["Multi-Agent Systems", "Autonomous Coding", "RAG", "LLM Evaluation"],
   },
   {
-    title: "SAM-7B — Small Agentic Model (Open-Source LLM)",
+    title: "SAM-7B : Small Agentic Model (Open-Source LLM)",
     description:
       "SAM is an open-source 7B parameter agentic language model fine-tuned for reasoning and task execution using explanation-trace supervision. Designed for efficiency, controllability, and strong reasoning performance in agent workflows.",
     image: "/projects/SAM.png",
@@ -106,7 +106,7 @@ export const Projects = () => {
             </span>
           </h2> */}
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A curated selection of applied research and production AI systems —
+            A curated selection of applied research and production AI systems
             spanning autonomous agents, open-source LLMs, enterprise RAG, and
             large-scale inference infrastructure.
           </p>

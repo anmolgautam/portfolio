@@ -120,10 +120,10 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I’m Anmol Gautam — a Lead Applied Scientist specializing in
-                large-scale GenAI systems. I build, optimize, and deploy LLM
+                Hi, I am Anmol Gautam a Lead Applied Scientist specializing in
+                large scale GenAI systems. I build, optimize, and deploy LLM
                 pipelines including fine-tuning, pruning, quantization, and
-                GPU-backed inference for enterprise Text-to-SQL, RAG, and
+                GPU backed inference for enterprise Text to SQL, RAG, and
                 agentic platforms.
               </p>
             </div>
