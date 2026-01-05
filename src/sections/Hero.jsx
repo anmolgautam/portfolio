@@ -122,9 +122,9 @@ export const Hero = () => {
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I am Anmol Gautam a Lead Applied Scientist specializing in
                 large scale GenAI systems. I build, optimize, and deploy LLM
-                pipelines including fine-tuning, pruning, quantization, and
-                GPU backed inference for enterprise Text to SQL, RAG, and
-                agentic platforms.
+                pipelines including fine-tuning, pruning, quantization, and GPU
+                backed inference for enterprise Text to SQL, RAG, and agentic
+                platforms.
               </p>
             </div>
 
@@ -276,6 +276,16 @@ export const Hero = () => {
                       </a>
                     ))}
                   </div>
+
+                  {/* Personal Philosophy */}
+                  <p
+                    className="mt-6 text-xs text-center text-muted-foreground/80
+                    font-serif italic leading-relaxed max-w-xs mx-auto
+                    animate-fade-in animation-delay-600"
+                  >
+                    "Be curious like a child. Play with colours like an artist.
+                    Think deeply like a monk."
+                  </p>
                 </div>
               </div>
             </div>
