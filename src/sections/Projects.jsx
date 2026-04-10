@@ -1,7 +1,27 @@
-import { ArrowUpRight, Github, ExternalLink, Database, Cpu, Network } from "lucide-react";
+import { ArrowUpRight, Github, ExternalLink, Database, Cpu, Network, Box } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
+  {
+    title: "Dendrux : Open-Source Runtime for Real-World Agents",
+    description:
+      "Dendrux is an open-source runtime built for real-world agents that need to do more than chat. It provides tool calling, persistence, observability, and a client-tool bridge that lets agents pause mid-execution, hand off to a human or external system, and resume exactly where they left off.",
+    image: "/projects/dendrux_architecture.svg",
+    highlights: [
+      "Tool calling with pause/resume execution",
+      "Built-in persistence & observability",
+      "FastAPI/SSE hosting out of the box",
+      "Client-tool bridge for human-in-the-loop",
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/dendrux/dendrux",
+        icon: Github,
+      },
+    ],
+    tags: ["Open Source", "Agentic AI", "FastAPI", "Tool Calling", "SSE"],
+  },
   {
     title: "SuperCoder 2.0 : Autonomous Multi-Agent Programming System",
     description:
@@ -79,7 +99,7 @@ const internalSystems = [
     bullets: [
       "Quantization & pruning pipelines",
       "High-throughput GPU inference",
-      "Autoscaling with Ray",
+      "Benchmarking & cost optimization",
     ],
   },
 ];
@@ -193,6 +213,17 @@ export const Projects = () => {
                     <li key={i}>• {b}</li>
                   ))}
                 </ul>
+                {sys.link && (
+                  <a
+                    href={sys.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-primary hover:underline mt-4"
+                  >
+                    <Github className="w-4 h-4" />
+                    View on GitHub
+                  </a>
+                )}
               </div>
             ))}
           </div>

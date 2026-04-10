@@ -52,8 +52,10 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I am a Lead Applied Scientist focused on building
-                production-grade AI and LLM systems.
+                I am a Lead Applied Scientist with 4+ years of experience
+                architecting and shipping production-grade AI systems - from
+                multi-agent platforms and Text-to-SQL engines to enterprise RAG
+                and real-time multimodal solutions.
               </p>
               <p>
                 My work sits at the intersection of applied research,
@@ -63,20 +65,34 @@ export const About = () => {
                 multi-agent architectures running in production.
               </p>
               <p>
-                Across roles at 8bit.ai, SuperAGI, and Oracle, I have taken
+                Across roles at 8bit.ai, SuperAGI, Oracle, and NVIDIA, I have taken
                 systems end-to-end: from research and experimentation, through
-                model fine-tuning and evaluation, to deployment on scalable
-                infrastructure. This includes open-source LLM training,
-                alignment (SFT, RL), inference optimization with vLLM and
-                SGLang, and designing reliable agentic workflows.
+                model fine-tuning and alignment (SFT, DPO, GRPO), to deployment on scalable
+                infrastructure with inference optimization using vLLM and
+                SGLang.
               </p>
               <p>
-                Alongside industry work, I have published peer-reviewed research
-                across LLMs, multimodal learning, and computer vision, with
-                papers in IEEE, Springer, and arXiv. My master’s research,
+                Alongside industry work, I have 6 published papers
+                across IEEE, Springer, and arXiv spanning LLMs, multimodal learning,
+                and computer vision. My master’s research at NIT Meghalaya,
                 completed in collaboration with NVIDIA, received the Institute
                 Best Thesis Award and achieved state-of-the-art results.
               </p>
+            </div>
+
+            {/* Education Highlight */}
+            <div className="flex items-center gap-4 glass rounded-xl px-5 py-4 animate-fade-in animation-delay-250">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <span className="text-primary text-lg">🎓</span>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">
+                  M.Tech CSE - NIT Meghalaya | Gold Medalist | 10.0 CGPA
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Institute Best Master’s Thesis Award - Region of Interest Segmentation in Biomedical Images
+                </p>
+              </div>
             </div>
 
             {/* Quote */}

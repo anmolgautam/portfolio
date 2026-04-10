@@ -35,6 +35,24 @@ const papers = [
       "Proposes a deep learning architecture for classifying educational videos, combining CNN and RNN-based temporal modeling.",
     link: "https://link.springer.com/chapter/10.1007/978-981-19-7867-8_12",
   },
+  {
+    title:
+      "Batch Image Encryption and Compression using Chaotic Map Infused Autoencoder Network",
+    venue: "IEEE",
+    year: "2022",
+    description:
+      "A novel approach combining chaotic map-based encryption with autoencoder networks for secure batch image encryption and compression.",
+    link: "https://ieeexplore.ieee.org/document/9986385",
+  },
+  {
+    title:
+      "Li-SegPNet: Encoder-Decoder Mode Lightweight Segmentation Network for Colorectal Polyps Analysis",
+    venue: "IEEE",
+    year: "2022",
+    description:
+      "A lightweight encoder-decoder segmentation network designed for efficient colorectal polyp analysis in biomedical imaging.",
+    link: "https://ieeexplore.ieee.org/document/9926143",
+  },
 ];
 
 export const Research = () => {
