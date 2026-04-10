@@ -9,6 +9,7 @@ import {
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { AnimatedTerminal } from "../components/AnimatedTerminal";
 
 const skills = [
   // AI / LLM Systems
@@ -187,60 +188,37 @@ export const Hero = () => {
               ))}
             </div> */}
           </div>
-          {/* Right Column - Profile Image */}
-          <div className="relatice animate-fade-in animation-delay-300">
-            {/* Profile Image */}
+          {/* Right Column - Animated Terminal */}
+          <div className="relative animate-fade-in animation-delay-300">
             <div className="relative max-w-md mx-auto">
               <div
-                className="absolute inset-0 
-              rounded-3xl bg-gradient-to-br 
-              from-primary/30 via-transparent 
+                className="absolute inset-0
+              rounded-3xl bg-gradient-to-br
+              from-primary/30 via-transparent
               to-primary/10 blur-2xl animate-pulse"
               />
-              <div className="relative glass rounded-3xl p-12 glow-border">
-                <img
-                  src="/profile-photo.png"
-                  alt="Anmol Gautam"
-                  className="w-full aspect-[4/5] object-cover rounded-2xl"
-                />
+              <div className="relative glass rounded-3xl p-6 glow-border">
+                <AnimatedTerminal />
 
-                {/* Floating Badge */}
-                {/* <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">
-                      Contact for Collaboration
-                    </span>
-                  </div>
-                </div> */}
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                   <div className="text-xl font-bold text-primary">
                     Enterprise
                     <span> AI Systems</span>
                   </div>
-                  {/* <div className="text-xs text-muted-foreground">
-                    Years Exp.
-                  </div> */}
                 </div>
 
-                {/* Social Links BELOW photo */}
-                <div className="mt-3 flex flex-col items-center gap-3 animate-fade-in animation-delay-500">
-                  {/* <span className="text-xs text-muted-foreground">
-                    Find me on
-                  </span> */}
+                {/* Social Links */}
+                <div className="mt-4 flex flex-col items-center gap-3 animate-fade-in animation-delay-500">
                   <div className="relative inline-flex items-center justify-center">
-                    {/* Glow */}
                     <div
-                      className="absolute -inset-1 rounded-full 
-    bg-primary/40 blur-md opacity-70 
+                      className="absolute -inset-1 rounded-full
+    bg-primary/40 blur-md opacity-70
     animate-pulse"
                     />
-
-                    {/* Label */}
                     <span
-                      className="relative z-10 px-3 py-1 text-xs 
-    text-muted-foreground 
+                      className="relative z-10 px-3 py-1 text-xs
+    text-muted-foreground
     rounded-full glass border border-primary/50"
                     >
                       Find me on
@@ -265,24 +243,14 @@ export const Hero = () => {
                         key={idx}
                         href={social.href}
                         target="_blank"
-                        className="p-2 rounded-full glass 
-              hover:bg-primary/10 hover:text-primary 
+                        className="p-2 rounded-full glass
+              hover:bg-primary/10 hover:text-primary
               transition-all duration-300"
                       >
                         <social.icon className="w-5 h-5" />
                       </a>
                     ))}
                   </div>
-
-                  {/* Personal Philosophy */}
-                  <p
-                    className="mt-6 text-xs text-center text-muted-foreground/80
-                    font-serif italic leading-relaxed max-w-xs mx-auto
-                    animate-fade-in animation-delay-600"
-                  >
-                    "Be curious like a child. Play with colours like an artist.
-                    Think deeply like a monk."
-                  </p>
                 </div>
               </div>
             </div>

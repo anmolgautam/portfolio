@@ -3,8 +3,13 @@ const experiences = [
     period: "Oct 2024 - Present",
     role: "Lead Applied Scientist (AI/ML)",
     company: "8bit.ai",
-    description:
-      "Architected Neutrino, a multi-agent AI platform powering enterprise search, Text-to-SQL, and workflow automation with human-in-the-loop execution and multi-LLM orchestration - deployed across 5 major ISV partners. Fine-tuned domain-specific LLMs using LoRA, DoRA, PEFT, and alignment techniques (DPO, GRPO). Built a multi-schema Text-to-SQL engine using agentic ReAct workflows across PostgreSQL and Trino, and designed end-to-end enterprise search spanning RAG ingestion, hybrid retrieval, knowledge-graph augmentation, PII tagging, and multi-tenant data discovery. Optimized inference latency and cost using vLLM and SGLang, and delivered real-time multimodal solutions including voice and sign-language AI.",
+    description: [
+      "Architected Neutrino, a multi-agent AI platform powering enterprise search, Text-to-SQL, and workflow automation with human-in-the-loop execution and multi-LLM orchestration — deployed across 5 major ISV partners.",
+      "Fine-tuned domain-specific LLMs using LoRA, DoRA, PEFT, and alignment techniques (DPO, GRPO).",
+      "Built a multi-schema Text-to-SQL engine using agentic ReAct workflows across PostgreSQL and Trino.",
+      "Designed end-to-end enterprise search spanning RAG ingestion, hybrid retrieval, knowledge-graph augmentation, PII tagging, and multi-tenant data discovery.",
+      "Optimized inference latency and cost using vLLM and SGLang, and delivered real-time multimodal solutions including voice and sign-language AI.",
+    ],
     technologies: [
       "Multi-Agent Systems",
       "Text-to-SQL",
@@ -26,8 +31,12 @@ const experiences = [
     period: "Nov 2023 - Oct 2024",
     role: "Applied Scientist (AI/ML)",
     company: "SuperAGI",
-    description:
-      "Built Text-to-SQL and RAG-based conversational multi-agent systems for SuperSales. Developed SuperCoder 2.0, an autonomous code navigation and issue-resolution system achieving 33% on SWE-Bench-Lite. Architected a fully autonomous multi-agent platform using open-source and closed-source LLMs with ReAct-style execution and Planner-Orchestration patterns, taking projects from PoC to AWS production. Developed SAM-7B, an instruction-tuned Mistral-7B model achieving GPT-3.5-comparable performance and outperforming Orca on GSM8K and ARC.",
+    description: [
+      "Built Text-to-SQL and RAG-based conversational multi-agent systems for SuperSales.",
+      "Developed SuperCoder 2.0, an autonomous code navigation and issue-resolution system achieving 33% on SWE-Bench-Lite.",
+      "Architected a fully autonomous multi-agent platform using open-source and closed-source LLMs with ReAct-style execution and Planner-Orchestration patterns, taking projects from PoC to AWS production.",
+      "Developed SAM-7B, an instruction-tuned Mistral-7B model achieving GPT-3.5-comparable performance and outperforming Orca on GSM8K and ARC.",
+    ],
     technologies: [
       "Multi-Agent Systems",
       "RAG",
@@ -44,8 +53,11 @@ const experiences = [
     period: "Aug 2022 - Oct 2023",
     role: "Associate Consultant",
     company: "Oracle",
-    description:
-      "Built document AI and information extraction pipelines using OCI Document Understanding and EasyOCR, improving NER and key-value extraction by 7%. Developed RAG-based question answering and computer vision systems using Falcon, Llama, ChromaDB, TensorFlow, and transfer learning, including a face recognition pipeline that improved performance by 37%.",
+    description: [
+      "Built document AI and information extraction pipelines using OCI Document Understanding and EasyOCR, improving NER and key-value extraction by 7%.",
+      "Developed RAG-based question answering and computer vision systems using Falcon, Llama, ChromaDB, TensorFlow, and transfer learning.",
+      "Built a face recognition pipeline using transfer learning that improved performance by 37%.",
+    ],
     technologies: [
       "RAG",
       "OCR",
@@ -62,8 +74,10 @@ const experiences = [
     period: "May 2021 - Apr 2022",
     role: "Research Intern",
     company: "NVIDIA",
-    description:
-      "Worked on NLP and computer vision systems using NVIDIA NeMo, HuggingFace, and transfer learning, including English-to-Hindi machine translation, object detection, and image segmentation.",
+    description: [
+      "Worked on NLP and computer vision systems using NVIDIA NeMo, HuggingFace, and transfer learning.",
+      "Built English-to-Hindi machine translation, object detection, and image segmentation pipelines.",
+    ],
     technologies: [
       "NVIDIA NeMo",
       "Machine Translation",
@@ -148,9 +162,16 @@ export const Experience = () => {
                     </span>
                     <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
                     <p className="text-muted-foreground">{exp.company}</p>
-                    <p className="text-sm text-muted-foreground mt-4">
-                      {exp.description}
-                    </p>
+                    <ul className={`text-sm text-muted-foreground mt-4 space-y-2 ${
+                      idx % 2 === 0 ? "md:text-left" : ""
+                    }`}>
+                      {exp.description.map((point, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
                     <div
                       className={`flex flex-wrap gap-2 mt-4 ${
                         idx % 2 === 0 ? "md:justify-end" : ""
